@@ -1,7 +1,7 @@
 %define name	python-dateutil
 %define fname	dateutil
 %define version	1.2
-%define release	%mkrel 1
+%define release	%mkrel 2
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		%{name}
@@ -12,6 +12,9 @@ Group:		Development/Python
 URL:		http://labix.org/python-dateutil
 Source0:	http://labix.org/download/python-dateutil/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
+Requires:	python-base
+Requires:	python
+BuildArch:	noarch
 
 %description
 The dateutil module provides powerful extensions to the standard 
