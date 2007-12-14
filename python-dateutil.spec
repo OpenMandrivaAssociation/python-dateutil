@@ -1,7 +1,7 @@
 %define name	python-dateutil
 %define fname	dateutil
-%define version	1.2
-%define release	%mkrel 3
+%define version	1.3
+%define release	%mkrel 1
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		%{name}
@@ -16,27 +16,27 @@ Requires:	python
 BuildArch:	noarch
 
 %description
-The dateutil module provides powerful extensions to the standard 
+The dateutil module provides powerful extensions to the standard
 datetime module available in Python. Features include:
 
-* Computing of relative deltas (next month, next year, next monday, 
+* Computing of relative deltas (next month, next year, next monday,
   last week of month, etc);
-* Computing of relative deltas between two given date and/or datetime 
+* Computing of relative deltas between two given date and/or datetime
   objects;
-* Computing of dates based on very flexible recurrence rules, using a 
-  superset of the iCalendar specification. Parsing of RFC strings is 
+* Computing of dates based on very flexible recurrence rules, using a
+  superset of the iCalendar specification. Parsing of RFC strings is
   supported as well;
 * Generic parsing of dates in almost any string format;
-* Timezone (tzinfo) implementations for tzfile(5) format files 
-  (/etc/localtime, /usr/share/zoneinfo, etc), TZ environment string 
-  (in all known formats), iCalendar format files, given ranges (with 
-  help from relative deltas), local machine timezone, fixed offset 
+* Timezone (tzinfo) implementations for tzfile(5) format files
+  (/etc/localtime, /usr/share/zoneinfo, etc), TZ environment string
+  (in all known formats), iCalendar format files, given ranges (with
+  help from relative deltas), local machine timezone, fixed offset
   timezone, UTC timezone, and Windows registry-based time zones;
-* Internal up-to-date world timezone information based on Olson's 
+* Internal up-to-date world timezone information based on Olson's
   database;
-* Computing of Easter Sunday dates for any given year, using Western, 
+* Computing of Easter Sunday dates for any given year, using Western,
   Orthodox or Julian algorithms;
-* More than 400 test cases. 
+* More than 400 test cases.
 
 %prep
 %setup -q
