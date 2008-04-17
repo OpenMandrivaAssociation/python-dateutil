@@ -10,6 +10,7 @@ BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://labix.org/python-dateutil
 Source0:	http://labix.org/download/python-dateutil/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 Requires:	python
 BuildArch:	noarch
 
