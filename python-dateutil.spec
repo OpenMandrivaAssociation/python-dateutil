@@ -1,12 +1,9 @@
-%define name	python-dateutil
 %define fname	dateutil
-%define version	1.3
-%define release	%mkrel 1
 
 Summary:	Provides powerful extensions to the standard datetime module
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		python-dateutil
+Version:	1.4
+Release:	%{mkrel 1}
 License:	Python
 Group:		Development/Python
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -60,3 +57,4 @@ rm -rf %{buildroot}
 %doc LICENSE README NEWS
 %{py_puresitedir}/%{fname}
 %{py_puresitedir}/python_%{fname}-%{version}-py%{pyver}.egg-info
+
