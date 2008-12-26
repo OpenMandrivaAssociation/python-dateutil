@@ -3,7 +3,7 @@
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
 Version:	1.4.1
-Release:	2
+Release:	%{mkrel 2}
 License:	Python
 Group:		Development/Python
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
