@@ -3,10 +3,10 @@
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
 Version:	1.4.1
-Release:	1
+Release:	2
 License:	Python
 Group:		Development/Python
-BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}-buildroot
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://labix.org/python-dateutil
 Source0:	http://labix.org/download/python-dateutil/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
