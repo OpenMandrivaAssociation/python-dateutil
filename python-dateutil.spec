@@ -3,10 +3,9 @@
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
 Version:	1.5
-Release:	%mkrel 4
+Release:	5
 License:	Python
 Group:		Development/Python
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 URL:		http://labix.org/python-dateutil
 Source0:	http://labix.org/download/python-dateutil/%{name}-%{version}.tar.bz2
 BuildRequires:	python-devel
@@ -45,13 +44,6 @@ datetime module available in Python. Features include:
 %install
 rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
-
-%post
-
-%postun
-
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
