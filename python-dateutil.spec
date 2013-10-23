@@ -2,12 +2,12 @@
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
-Version:	1.5
-Release:	5
+Version:	2.1
+Release:	1
 License:	Python
 Group:		Development/Python
 URL:		http://labix.org/python-dateutil
-Source0:	http://labix.org/download/python-dateutil/%{name}-%{version}.tar.bz2
+Source0:	http://pypi.python.org/packages/source/p/python-dateutil/%{name}-%{version}.tar.gz
 BuildRequires:	python-devel
 BuildRequires:	python-setuptools
 Requires:	python
@@ -42,11 +42,9 @@ datetime module available in Python. Features include:
 %build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --root=%{buildroot}
 
 %files
-%defattr(-,root,root)
 %doc LICENSE README NEWS
 %{py_puresitedir}/%{fname}
 %{py_puresitedir}/python_%{fname}-%{version}-py%{py_ver}.egg-info
@@ -101,4 +99,5 @@ python setup.py install --root=%{buildroot}
 * Tue Aug 21 2007 Adam Williamson <awilliamson@mandriva.org> 1.2-1mdv2008.0
 + Revision: 68575
 - Import python-dateutil
+
 
