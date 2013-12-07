@@ -3,7 +3,7 @@
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
 Version:	2.1
-Release:	4
+Release:	5
 License:	Python
 Group:		Development/Python
 Url:		http://labix.org/python-dateutil
