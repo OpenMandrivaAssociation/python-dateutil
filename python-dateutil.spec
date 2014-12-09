@@ -2,16 +2,16 @@
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
-Version:	2.2
-Release:	2
+Version:	2.3
+Release:	1
 License:	Python
 Group:		Development/Python
 Url:		http://labix.org/python-dateutil
 Source0:	http://pypi.python.org/packages/source/p/python-dateutil/%{name}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python)
-Requires:	python
+BuildRequires:	python-setuptools >= 3.0
+BuildRequires:	pkgconfig(python3)
+Requires:	python >= 3.0
 
 %description
 The dateutil module provides powerful extensions to the standard
@@ -45,7 +45,7 @@ datetime module available in Python. Features include:
 python setup.py install --root=%{buildroot}
 
 %files
-%doc LICENSE README NEWS
+%doc LICENSE NEWS
 %{py_puresitedir}/%{fname}
 %{py_puresitedir}/python_%{fname}-%{version}-py%{py_ver}.egg-info
 
