@@ -2,12 +2,12 @@
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
-Version:	2.6.1
-Release:	4
+Version:	2.7.5
+Release:	1
 License:	Python
 Group:		Development/Python
-Url:		http://labix.org/python-dateutil
-Source0:	https://pypi.python.org/packages/54/bb/f1db86504f7a49e1d9b9301531181b00a1c7325dc85a29160ee3eaa73a54/python-dateutil-%{version}.tar.gz
+Url:		https://dateutil.readthedocs.io/en/stable/
+Source0:	http://pypi.python.org/packages/source/p/python-dateutil/python-%{fname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools >= 3.0
 BuildRequires:	pkgconfig(python3)
