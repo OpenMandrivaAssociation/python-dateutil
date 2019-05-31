@@ -40,6 +40,10 @@ datetime module available in Python. Features include:
 
 %prep
 %autosetup -p1
+rm -rf python_dateutil.egg-info/
+
+iconv --from=ISO-8859-1 --to=UTF-8 NEWS > NEWS.new
+mv NEWS.new NEWS
 
 %build
 %py3_build
