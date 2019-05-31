@@ -1,4 +1,2 @@
-removed_sources:
-  python-dateutil-2.6.1.tar.gz: db2ace298dee7e47fd720ed03eb790885347bf4e
 sources:
-  python-dateutil-2.7.5.tar.gz: c99d3a05d0ac220bc736e5e6c169be0ab4a75298
+  python-dateutil-2.8.0.tar.gz: 140cbe261ba86ff30970bd8ca3326f543de91e4d

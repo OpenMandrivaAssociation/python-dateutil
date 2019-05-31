@@ -1,8 +1,8 @@
-%define fname	dateutil
+%define fname dateutil
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
-Version:	2.7.5
+Version:	2.8.0
 Release:	1
 License:	Python
 Group:		Development/Python
@@ -13,6 +13,7 @@ BuildRequires:	python-setuptools >= 3.0
 BuildRequires:	python3egg(setuptools-scm)
 BuildRequires:	pkgconfig(python3)
 Requires:	python >= 3.0
+Requires:	timezone
 
 %description
 The dateutil module provides powerful extensions to the standard
@@ -38,12 +39,13 @@ datetime module available in Python. Features include:
 * More than 400 test cases.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
+%py3_build
 
 %install
-python setup.py install --root=%{buildroot}
+%py3_install
 
 %files
 %doc LICENSE NEWS
