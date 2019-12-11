@@ -2,12 +2,12 @@
 
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
-Version:	2.8.0
+Version:	2.8.1
 Release:	1
 License:	Python
 Group:		Development/Python
 Url:		https://dateutil.readthedocs.io/en/stable/
-Source0:	http://pypi.python.org/packages/source/p/python-dateutil/python-%{fname}-%{version}.tar.gz
+Source0:	https://pypi.python.org/packages/source/p/python-dateutil/python-%{fname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools >= 3.0
 BuildRequires:	python3egg(setuptools-scm)
