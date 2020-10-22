@@ -11,7 +11,6 @@ Url:		https://dateutil.readthedocs.io/en/stable/
 Source0:	https://pypi.python.org/packages/source/p/python-dateutil/python-%{fname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools >= 3.0
-BuildRequires:	python3dist(setuptools-scm)
 BuildRequires:	pkgconfig(python3)
 Requires:	python >= 3.0
 Requires:	timezone
