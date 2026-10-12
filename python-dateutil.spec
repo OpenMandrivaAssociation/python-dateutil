@@ -3,7 +3,7 @@
 Summary:	Provides powerful extensions to the standard datetime module
 Name:		python-dateutil
 Version:	2.9.0.post0
-Release:	1
+Release:	2
 License:	Python
 Group:		Development/Python
 Url:		https://dateutil.readthedocs.io/en/stable/
@@ -38,6 +38,10 @@ datetime module available in Python. Features include:
 * Computing of Easter Sunday dates for any given year, using Western,
   Orthodox or Julian algorithms;
 * More than 400 test cases.
+
+%build -p
+# The sdist is not a git checkout, so the versioning backend needs the version.
+export SETUPTOOLS_SCM_PRETEND_VERSION=%{version}
 
 %files
 %doc LICENSE NEWS
